@@ -1,0 +1,107 @@
+
+/*.people {
+	display: flex;
+}
+
+.people article {
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+}
+*/
+.people {
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px;
+	grid-template-rows: 200px 200px;
+	width: 90%;
+    margin: 0 auto;
+    grid-column-gap: 30px;
+	grid-row-gap: 60px;
+}
+
+.people article {
+	width: 200px;
+	height: 200px;
+	/*left: 305px;
+	top: 30px;*/
+	border-radius: 200px;
+	padding: 30px;
+}
+
+.photo {
+	border-radius: 200px;
+    /*overflow: hidden;*/
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.photo img {
+	border-radius: 200px;
+    height: 200px;
+}
+
+.person {
+	margin: 20px;
+	transition-delay: 1s;
+}
+
+.details {
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 23px;
+	color: #2F4F4F;
+}
+
+.rank {
+	width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-top: -115px;
+    display: block;
+    margin-left: 150px;
+    position: absolute;
+    background: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+	font-size: 16px;
+	line-height: 18px;
+	}
+
+.person:hover {
+	background: #EEEEEE;
+	border-radius: 0;
+	/*border-radius: 20px;*/
+	transition-delay: 1s;
+	width: 200px;
+	height: 220px;
+}
+
+.extra {
+	display: none;
+	font-family: Arial;
+	font-size: 21.6px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.person:hover .photo img {
+	border-radius: 60px;
+}
+
+.person:hover .extra {
+	display: block;
+}
+
+
+
+@media (min-width: 500px) and (max-width: 750px) {
+.people {
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 200px 200px 200px 200px;
+	}	
+}
